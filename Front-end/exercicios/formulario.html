@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="" method="">
+        <h1>Formulário</h1>
+        <fieldset>
+            <legend>Daddos Pessoais</legend>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </p>
+    
+            
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </p>
+<p>
+    
+                <label for="">Senha: </label>
+                <input type="password" name="Senha" id="senha">
+</p>
+
+        </fieldset>
+
+        <label for="arquivo">Arquivo</label>
+        <input type="file" name="arquivo" id="arquivo"><br>
+        
+        <p>
+            <label for="mas">
+                <input type="radio" name="sexo" id="sexo"/> Masculino 
+            </label>
+            <label for="fem">
+                <input type="radio" name="sexo" id="sexo"/> Feminino
+            </label>
+        </p>
+
+        <p>
+            <select name="" id="">
+                <optgroup label="sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+                <optgroup label="sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <input type="button" value="Enviar">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </form>
+    
+      <button onclick="hello()">Clique</button>
+    </body>
+
+    <script>
+        function hello() {
+            alert("Hello");
+        }
+    </script>
+</html>

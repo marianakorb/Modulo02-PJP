@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;
+background-color: #808182a0;">
+
+    <h1 style="text-align: center; font-size: 1.5em;">FORMULÁRIO DE CADASTRAMENTO DE VEÍCULOS</h1>
+
+    <form>
+        <fieldset>
+            <legend>DADOS DO VEÍCULO</legend>
+            <label for="tipo">Tipo de Veículo</label>
+            <select style="display: block; margin-bottom: 10px;" name="tipo" id="tipo" >
+                <option value="carro">Carro de Passeio</option>
+                <option value="moto">Motocicleta</option>
+            </select>
+
+            <label for="renavam">Renavam</label>
+            <input type="text" name="renavam" id="renavam">
+
+            <label for="marca"> Marca</label>
+            <input type="text" name="marca" id="marca">
+
+            <label for="modelo"> Modelo</label>
+            <input type="text" name="modelo" id="modelo">
+
+            <label for="cor">Cor</label>
+            <input type="text" name="cor" id="cor">
+
+            <label for="ano">Ano de Fabricação</label>
+            <input type="text" name="ano" id="ano">
+
+            <label for="placa"> Placa</label>
+            <input type="text" name="placa" id="placa">
+        </fieldset>
+
+        <fieldset>
+            <legend>DADOS DO PROPRIETÁRIO</legend>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero">
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro">
+
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="rg">RG</label>
+            <input type="text" name="rg" id="rg">
+
+            <label for="cnh">CNH</label>
+            <input type="text" name="cnh" id="cnh">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <div style=" display: flex; width: 300px; margin: auto; justify-content: space-between;">
+            <input style="border: none; border-radius: 10px; padding: 5px; font-weight: bold; background-color: #f79c67;" type="reset" value="Limpar">
+            <input style="border: none; font-size: 1em; font-weight: bold; border-radius: 10px; padding: 5px; background-color: #1fbed6;" type="submit" value="Enviar Dados">
+        </div>
+    </form>
+
+</body>
+
+</html>
