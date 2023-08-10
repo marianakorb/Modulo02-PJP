@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #b42929;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            display: flex;
+            background-color: #191824;
+            height: 100px;
+            align-items: center;
+            justify-content: space-around ;
+        }
+
+        img{
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        h1{
+            font-family:'Brush Script MT', cursive;
+            text-align: center;
+            background-color: #ffffff;
+            margin-top: 0px;
+            border-radius: 0px 0px 20px 20px;
+            color: #b42929;
+            padding: 5px;
+        }
+
+        h2{
+            text-align: center; 
+            font-size: 1.2em;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            background-color: white;
+            color: #191824;
+            width: 650px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        form {
+            background-color: white;
+            width: 650px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 0px 0px 5px 5px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 120px;
+            display: inline-block;
+            text-align: right;
+            color: #000;
+            font-size: 0.8em;
+            
+        }
+        fieldset > input,
+        fieldset > select {
+            border-radius: 5px;
+            border: 1px solid #191824;
+            height: 20px;
+        }
+        fieldset {
+            width: 620px;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px solid #191824;
+        }
+
+        legend {
+            font-size: 0.9em;
+            color: grey;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        input[type=reset],
+        #btn-enviar {
+            border: none; 
+            border-radius: 5px; 
+            padding: 5px 10px; 
+            font-weight: bold; 
+            color: white; 
+            cursor: pointer;
+        }
+        input[type=reset]{           
+            background-color: #b42929;     
+        }
+        #btn-enviar{
+            font-size: 1em; 
+            background-color: #191824; 
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div id="img">
+        <img src="https://thumbs.dreamstime.com/z/projeto-do-logotipo-da-silhueta-ve%C3%ADculo-carro-de-esportes-104452506.jpg?w=768" alt="">
+    </div>
+    <div id="pesquisa">
+        <input type="text" name="pesquisa" id="pesquisa">
+        <input style="cursor: pointer;" type="submit" value="pesquisar">
+    </div>
+</header>
+<div>
+    <h1>AutoDeal</h1>
+</div>
+    <h2>FORMULÁRIO DE CADASTRO DE VEÍCULOS</h2>
+
+    <form>
+        <fieldset>
+            <legend>DADOS DO VEÍCULO</legend>
+            <label for="tipo">Tipo de Veículo</label>
+            <select style="margin-bottom: 10px;" name="tipo" id="tipo" >
+                <option value="carro">Carro de Passeio</option>
+                <option value="moto">Motocicleta</option>
+            </select><br>
+
+            <label for="renavam">Renavam</label>
+            <input type="text" name="renavam" id="renavam">
+
+            <label for="marca"> Marca</label>
+            <input type="text" name="marca" id="marca">
+
+            <label for="modelo"> Modelo</label>
+            <input type="text" name="modelo" id="modelo">
+
+            <label for="cor">Cor</label>
+            <input type="text" name="cor" id="cor">
+                       
+            <label for="ano">Ano Fabricação</label>
+            <input type="text" name="ano" id="ano">
+
+            <label for="placa"> Placa</label>
+            <input type="text" name="placa" id="placa">
+        </fieldset>
+
+        <fieldset>
+            <legend>DADOS DO PROPRIETÁRIO</legend>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero">
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro">
+
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="rg">RG</label>
+            <input type="text" name="rg" id="rg">
+
+            <label for="cnh">CNH</label>
+            <input type="text" name="cnh" id="cnh">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <div style= "display: flex; width: 620px; margin: auto; justify-content: space-between; margin-bottom: 5%;">
+
+            <input type="reset" value="Limpar">
+            <input type="submit" id="btn-enviar" value="Enviar Dados">
+        </div>
+    </form>
+
+</body>
+
+</html>
