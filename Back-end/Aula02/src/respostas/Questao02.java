@@ -27,11 +27,12 @@ public class Questao02 {
 			} else if (x > 0 && y < 0) {
 				System.out.println("4°Q");
 			} else {
-				System.out.println("");
+				break;
 			}
 
-		} while ((x != 0) && (y != 0));
-
+		} while (x == 0 || y == 0);
+		
+		sc.close();
 	}
 
 }
