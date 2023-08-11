@@ -1,7 +1,5 @@
 package respostas;
 
-import java.text.DecimalFormat;
-import java.text.Format;
 import java.util.Scanner;
 
 public class Questao07 {
@@ -23,6 +21,8 @@ public class Questao07 {
 			System.out.print(q + " ");
 			System.out.println(c);
 		}
+		
+		sc.close();
 
 	}
 

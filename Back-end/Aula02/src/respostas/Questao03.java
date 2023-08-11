@@ -37,6 +37,8 @@ public class Questao03 {
 			}
 
 		} while (escolha != 4);
+		
+		sc.close();
 	}
 
 }

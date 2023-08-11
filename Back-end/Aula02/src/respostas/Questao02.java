@@ -30,8 +30,9 @@ public class Questao02 {
 				break;
 			}
 
-		} while ((x != 0) && (y != 0));
-
+		} while (x == 0 || y == 0);
+		
+		sc.close();
 	}
 
 }

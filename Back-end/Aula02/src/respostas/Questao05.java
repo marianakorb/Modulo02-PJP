@@ -12,6 +12,14 @@ public class Questao05 {
 		System.out.println("Digite um valor inteiro: ");
 		x = sc.nextInt();
 		
+		for(int i=1; i<=x; i++) {
+
+			if(x % i == 0) {
+				System.out.print("{ " + i + " } ");
+			}
+		}
+		
+		sc.close();
 		
 	}
 
