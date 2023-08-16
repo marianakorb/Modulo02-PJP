@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+
+    <style>
+        body{
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #container-menu-superior{
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 10vh;
+        }
+        .menu-item{
+            color: #FFF;
+            font-size: 1.5rem;
+            text-decoration: none;
+            /* border: 1px solid red; */
+        }
+        .menu-item:hover{
+            color: #666;
+        }
+        #container-menu-lateral{
+            background-color: #333;
+            width: 10vw;
+            height: 80vh;
+            padding: 5px;
+        }
+        
+        #container-menu-lateral ul li{
+            list-style-type: none;
+            font-size : 1.5rem;
+            padding: 1vh;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav id="container-menu-superior">
+        <a href="#" class="menu-item">Item 1</a>
+        <a href="#" class="menu-item">Item 2</a>
+        <a href="#" class="menu-item">Item 3</a>
+        <a href="#" class="menu-item">Item 4</a>
+    </nav>
+ 
+    <nav id="container-menu-lateral">
+        <ul>
+            <li><a href="#" class="menu-item">Item 1</a></li>
+            <li><a href="#" class="menu-item">Item 2</a></li>
+            <li><a href="#" class="menu-item">Item 3</a></li>
+            <li><a href="#" class="menu-item">Item 4</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

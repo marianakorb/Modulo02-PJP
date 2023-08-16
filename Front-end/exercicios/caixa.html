@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>  
+    <style>
+        div {
+            border: 1px solid red;
+        }
+     
+        /**margem e padding*/
+        #container-senac {
+            width: 580px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     
+        #container-senac-right,
+        #container-senac-center,
+        #container-senac-left {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin-top: 10px;
+            padding: 15px;
+            margin-left: 5px;
+        }
+     
+        #container-senac-right {
+            text-align: right;
+        }
+     
+        #container-senac-center {
+            text-align: center;
+        }
+     
+        #container-senac-responsivo {
+            height: 50vh;
+        }
+        #container-senac-responsivo span{
+            font-size: 1.5rem;
+        }
+    </style>
+     
+    <body>
+        <div id="container-senac">
+            <div id="container-senac-left">Left</div>
+            <div id="container-senac-center">Center</div>
+            <div id="container-senac-right">Right</div>
+        </div>
+     
+        <div id="container-senac-responsivo">
+            <span>texto</span>
+        </div>
+</body>
+</html>
