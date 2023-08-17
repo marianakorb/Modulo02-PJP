@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana;
+        }
+ 
+        a {
+            color: #fff;
+            font-size: 1em;
+            text-decoration: none;
+            width: 70px;
+            transition-duration: 0.7s;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        a.externo::after {
+    content: "\00a0\1F517";
+}
+ 
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        main{
+            margin: 50px;
+        }
+ 
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            height: 5vh;
+            align-items: center;
+        }
+ 
+        .menu-item {
+            font-size: 1.2rem;
+        }
+ 
+        #container {
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+ 
+        .content {
+            /* border: 1px solid blue; */
+            padding: 20px;
+        }
+ 
+        .content h2 {
+            margin-left: 25px;
+        }
+ 
+        #servicos {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-around;
+        }
+ 
+        .servico {
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-rows: 15% 60% 15%;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 3px #CCC;
+        }
+ 
+        button.veja {
+            width: 100px;
+            height: 30px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px #000;
+ 
+        }
+ 
+        button.veja:hover {
+            background-color: #444;
+            color: #ccc;
+        }
+ 
+        #content-empresa {
+            display: flex;
+            gap: 10px;
+        }
+ 
+        #contennt-empresa-text {
+            text-align: justify;
+        }
+ 
+        #content-form {
+            display: flex;
+        }
+ 
+        #mensagens-usuario{
+            width: 350px;
+            height: 350px;
+            overflow: auto;
+            border: 1px solid #CCC;
+            border-radius: 8px;
+        }
+ 
+        #content-form span{
+            padding: 10px;
+            display: inline-block;
+            font-size: 12px;
+        }
+ 
+        #content-form span .usuario{
+            font-weight: bold;
+        }
+ 
+        footer {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        @media screen  and (max-width: 700px){
+            #servicos{
+                display: inline-block;
+            }
+            .servico{
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TRANSID - Sua Transportadora de Confiança</h1>
+    </header>
+    <nav class="menu">
+        <a href="#" class="menu-item">Home</a>
+        <a href="#" class="menu-item">Clientes</a>
+        <a href="#" class="menu-item">Contato</a>
+    </nav>
+    <main id="container">
+        <section class="content">
+            <h2>Nossos Serviços</h2>
+            <div id="servicos">
+                <div class="servico">
+                    <h3>Transporte de Cargas</h3>
+                    <p>Transportamos sua carga com segurança e eficiência para qualquer lugar do Brasil</p>
+                    <button class="veja">Veja mais</button>
+                </div>
+ 
+                <div class="servico">
+                    <h3>Logística Integrada</h3>
+                    <p>Oferecemos soluções completas de logística para otimizar sua cadeia de suprimentos.</p>
+                    <button class="veja">Veja mais</button>
+                </div>
+ 
+                <div class="servico">
+                    <h3>Rastreamento Online</h3>
+                    <p>Acompanhe sua carga em tempo real e tenha total visibilidade do seu transporte.</p>
+                    <button class="veja">Veja mais</button>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="content">
+            <div id="content-empresa">
+                <div id="contennt-empresa-imagem">
+                    <img src="imagens/transportadora.jpg" width="210px" />
+                </div>
+                <div id="contennt-empresa-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </section>
+ 
+        <section id="content-form">
+            <div id="mensagens-usuario">
+                <span><span class="usuario">@Sidney</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@André </span>- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@Larrisa</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@Jõao</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@Carlos</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@Katia</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                <span><span class="usuario">@Junior</span> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy </span>
+                   
+            </div>
+            <form action="">
+                <label for="">Nome:</label>
+                <input />
+                <label>Mensagem:</label>
+                <textarea></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TRANSID - Sua Transportadora de Confiança. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
