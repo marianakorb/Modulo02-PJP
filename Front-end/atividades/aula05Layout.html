@@ -1,18 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando Layout</title>
+    <link rel="shortcut icon" href="https://assets.dryicons.com/uploads/icon/svg/8183/afeb7179-014b-4526-ae13-4ae319738a7b.svg" type="image/x-icon">
+
+    <style>
+        body, html {
+            background-color: antiquewhite;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        header #nav-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            margin: auto;
+            padding: 20px;
+            
+        }
+
+        main {
+            width: 70vw;
+            margin: auto;
+            padding: 20px;
+            
+        }
+        #links-header {
+            display: flex;
+            width: 350px;
+            justify-content: space-between;
+           
+        }
+
+        #links-header a {
+            color: gray;
+            text-decoration: none;
+        }
+
+        #links-header a:hover {
+            color: #000;
+        }
+
+        section#container01 {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            
+        }
+
+        section div#caixa02 {
+            width: 90vw;
+            padding: 20px;
+            margin-left: 10px;
+            background-color: #01012b;
+        }
+
+        div#text-principal div h1 {
+            font-size: 2em;
+            padding-left: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold; 
+
+        }
+
+        div#text-principal #div-paragrafo {
+            font-size: 0.9em;
+            color: grey;
+            padding: 10px 60px 0px 10px;
+            text-align: justify
+            ;
+        }
+
+        #btn-read {
+            cursor: pointer;
+            background-color: rgb(246, 106, 106);
+            border: none;
+            font-family: monospace;
+            padding: 5px 10px 5px 10px;
+          
+        }
+
+        #caixa02 h2 {
+            color: #efef20;
+        }
+
+        .h3-caixa02 {
+            color: #fff;
+        }
+
+        .p-caixa02 {
+            color: #ccc ;
+        }
+
+        #container02 {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 30px;
+            align-items: center;
+            width: 900px;
+            
+        }
+
+        .box123 {
+            width: 200px;
+            border-top: 2px solid black;
+            padding-left: 10px;
+        }
+        .box123 h2 {
+            color: gray;
+            margin-bottom: 0px;
+        }
+
+        .box123 h3{
+            font-size: 1em;
+            margin-top: 5px;
+        }
+
+        .box123 p {
+            font-size: 0.9em;
+            line-height: 20px;
+            color: grey;
+        }
+
+        footer {
+            background-color: #01012b;
+            color: white;
+            height: 200px;
+            padding: 20px;
+            padding-left: 50px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        form input, form textarea {
+            width: 300px;
+            margin-bottom: 9px;
+            padding: 5px;
+        }
+
+        form textarea {
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form button {
+            width: 100px;
+            padding: 5px;
+            cursor: pointer;
+            color: #efef20;
+            background-color: #01012b;
+            border: 1px solid #efef20;
+            border-radius: 20px;
+        }
+
+        form button:hover {
+            color: #efef2098;
+            border: 1px solid #efef2098;
+        }
+
+        #footer {
+            text-align: center;
+        }
+
+        @media screen  and (max-width: 800px){
+            #container02 {
+                display: inline-block;
+                padding: 20px;
+            }
+
+            #container01 {
+                flex-direction: column;
+            }
+
+            #caixa02 {
+                margin-top: 50px;
+                
+            }
+            
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <nav>
-            <div>
-                <img src="" alt="">
+        <nav id="nav-container">
+            <div id="img-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia%27s_W.svg" alt="logo" width="50px">
             </div>
-            <div>
+            <div id="links-header">
                <a href="#">Home</a>
                <a href="#">New</a>
                <a href="#">Popular</a>
@@ -21,61 +207,74 @@
             </div>
         </nav>
     </header>
+    <hr>
     <main>
         <section id="container01">
-            <div>
-                <div>
-                    <img src="" alt="">
+                <div id="text-principal">
+                    <div id="div-titulo">
+                        <h1>The Bright Future of Web 3.0?</h1> 
+                    </div>            
+                    <div id="div-paragrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae nulla aliquid sed possimus consequatur magnam amet mollitia facere laudantium!</p>
+                      <p>
+                          
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto vero, placeat beatae iste magnam similique vel velit, esse magni ipsam aut ex corporis nostrum libero consequatur deserunt asperiores facilis consequuntur.
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum modi amet soluta, necessitatibus itaque reprehenderit optio perferendis. Totam, voluptate. Unde harum, maxime vitae tempore officia beatae doloremque quidem voluptates nostrum.
+                      </p>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem placeat dolore culpa ad ex est quisquam incidunt odio in? Odio maxime ipsa rerum cumque! Magnam ut deserunt optio dolor! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ad quos quae porro dolores, dignissimos eligendi labore deserunt accusamus fuga in numquam, nisi quo deleniti, voluptatum voluptatem ea velit quam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque architecto laboriosam nam ea quo nobis eligendi aliquid modi nulla non vitae corrupti magni ipsum nostrum odit, fugit, esse mollitia voluptate!</p>
+                      <button id="btn-read">Read More</button>
+                    </div>
                 </div>
-                <div>
-                    <h1>The Bright Future of Web 3.0?</h1>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae nulla aliquid sed possimus consequatur magnam amet mollitia facere laudantium! Adipisci aperiam velit asperiores iure consectetur veritatis dolore libero unde.</p>
-
-                    <button>Read More</button>
-                </div>
-
-            </div>
-            <div>
+            <div id="caixa02">
                 <h2>New</h2>
                 <div>
-                    <h3></h3>
-                    <p></p>
+                    <h3 class="h3-caixa02">Hydrogem VS Eletric Cars</h3>
+                    <p class="p-caixa02">Will hydrogen-fueled cars ever catch up to EVs?</p>
                 </div>
+                <hr>
                 <div>
-                    <h3></h3>
-                    <p></p>
+                    <h3 class="h3-caixa02">The Downside of AI Artistry</h3>
+                    <p class="p-caixa02">What are the possible adverse effects of on-demand AI image generation?</p>
                 </div>
+                <hr>
                 <div>
-                    <h3>
-                        <p></p>
-                    </h3>
+                    <h3 class="h3-caixa02">Is VC Funding Drying Up?</h3>
+                    <p class="p-caixa02">Private Funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                 </div>
             </div>
 
         </section>
 
-        <section>
-            <div>
+        <section id="container02">
+            <div class="box123">
                <h2>01</h2>
-               <h3></h3>
-               <p></p>
+               <h3>Reviving Retro PCs</h3>
+               <p>What happens when old PCs given modern upgrades?</p>
             </div>
-            <div>
+            <div class="box123">
                 <h2>02</h2>
-                <h3></h3>
-                <p></p>
+                <h3>Top 10 Laptops of 2023</h3>
+                <p>Our best picks for various needs and budgets.</p>
              </div>
-             <div>
+             <div class="box123">
                 <h2>03</h2>
-                <h3></h3>
-                <p></p>
+                <h3>The Growth of Gaming</h3>
+                <p>How the pandemic has sparked fresh opportunities.</p>
              </div>
         </section>
     </main>
     <footer>
-        <p></p>
+        <div id="div-form">
+            <form action="">
+                <label for="">Nome:</label>
+                <input type="text" placeholder="seu nome"/>
+                <label>Mensagem:</label>
+                <textarea placeholder="sua mensagem..."></textarea>
+                <button>Enviar</button>
+            </form>
+            
+        </div>
+        <div id="footer"><p>&copy web news</p></div>
     </footer>
 </body>
 </html>
