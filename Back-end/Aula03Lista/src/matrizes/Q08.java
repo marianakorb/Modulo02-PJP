@@ -42,7 +42,7 @@ public class Q08 {
 					if(j > 0) {						
 						System.out.println("Left: " + matriz[i][j-1]);
 					}
-					if ( j < n) {
+					if ( j < (n-1)) {
 						
 						System.out.println("right: " + matriz[i][j+1]);
 					}
@@ -51,7 +51,7 @@ public class Q08 {
 						System.out.println("Up: " + matriz[i-1][j]);
 					}
 					
-					if(i < m) {
+					if(i < (m-1)) {
 						
 						System.out.println("Down: " + matriz[i+1][j]);
 					}
@@ -64,5 +64,4 @@ public class Q08 {
 	}
 
 }
-
 
