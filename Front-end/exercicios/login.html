@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-
+<script src="valida-login.js"></script>
     <style>
         body{
             margin: 0px;
@@ -30,7 +30,7 @@
             margin-bottom: 40px;
         }
         .login-form input{
-            width: 380px;
+            width: 350px;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
@@ -38,13 +38,14 @@
             font-size: 14px;
         }
         .login-container button{
-            width: 380px;
+            width: 350px;
             padding: 10px;
             border-radius: 4px;
             border: 1px solid #ccc;
             cursor: pointer;
-            background-color: #007bff;
+            background-color:#007bff;
             color: #FFF;
+            
         }
         .login-container button:hover{
             background-color: #547497;
@@ -59,11 +60,14 @@
             <form class="login-form">
                 <input type="text" placeholder="Usuário" required />
                 <input type="password" placeholder="Senha" required />
-                <button type="submit">Entrar</button>
+                <button type="submit" onclick="validaSenha()">Entrar</button>
+                <div class="container-erro">
+                    <span class="mensagem-padrao"></span>
+                    <span class="mensagem-erro"></span>
+                </div>
             </form>
         </div>
     </div>
-
     
 </body>
 </html>
