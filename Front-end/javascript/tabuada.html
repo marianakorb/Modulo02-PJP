@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>    
+    <style>
+        body {
+            font-family: 'verdana', 'Lucida Sans Regular';
+            font-size: 12px;
+        }
+     
+        button,
+        input {
+            border: 1px solid #CCC;
+            height: 40px;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        input.erro{
+            color: red;
+        }
+     
+        button:hover {
+            background-color: #DDD;
+            cursor: pointer;
+        }
+        #tabuada-resultado{
+            width: 150px;
+            height: 300px;
+            box-shadow: 0px 0px 10px #CCC;
+            border-radius: 8px;
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            padding: 8px;
+        }
+    </style>
+</head>  
+    <body>
+        <form>
+            <input onclick="limparInput(this)" type="text" id="tabuada" placeholder="Digite o valor da tabuada" />
+            <button onclick="calcular()">Calcular</button>
+        </form>
+     
+        <div id="tabuada-resultado"></div>
+    </body>
+    <script src="tabuada.js">
+        const elementResultado = document.getElementById('tabuada-resultado');
+        elementResultado.style.visibility = 'hidden';
+    </script>
+    <title>Document</title>
+
+</html>
