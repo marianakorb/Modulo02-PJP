@@ -4,6 +4,6 @@ div.minhaClasse {
     border: 1px solid cadetblue;
     background-color: #ccc;
 }
-.padrao{
-    background-color: bisque;
+div.padrao{
+    background-color: rgb(163, 102, 26);
 }

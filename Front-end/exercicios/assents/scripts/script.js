@@ -32,7 +32,7 @@ aplicarClassBotao = () => {
 
 alterarClassElement = () => {
     //document.querySelectorAll("#meuDiv").classList.add("padrao");
-    document.querySelectorAll("meuDiv").forEach(function(el) {
+    document.querySelectorAll("#meuDiv").forEach(function(el) {
         el.classList.add("padrao");
     })
 }
