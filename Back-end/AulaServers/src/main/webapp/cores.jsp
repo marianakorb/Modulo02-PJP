@@ -9,16 +9,15 @@
 <body>
 
 <form action="CoresServelet" method="post">
-	<label for=cores>Digite suas cores favoritas: </label>
+	<label for=cores>Selecione suas cores favoritas: </label>
 	
-	<select name="cores" multiple>
-		<option value="Vermelho">Vermelho</option>
-		<option value="Azul">Azul</option>
-		<option value="Amarelo">Amarelo</option>
-		<option value="Verde">Verde</option>
-		<option value="Cinza">Cinza</option>
-		<option value="Laranja">Laranja</option>
-	</select>
+	<label><br> <input type="checkbox" name="cores" value="amarelo">Amarelo </label>
+	<label><br> <input type="checkbox" name="cores" value="vermelho">Vermelho </label>
+	<label><br> <input type="checkbox" name="cores" value="azul">Azul </label>
+	<label><br> <input type="checkbox" name="cores" value="cinza">Cinza </label>
+	<label><br> <input type="checkbox" name="cores" value="laranja">Laranja </label>
+	<label><br> <input type="checkbox" name="cores" value="verde">Verde </label>
+	
 	<input type="text" id="nome" name="nome">
 	
 	<button type="submit">Enviar</button>

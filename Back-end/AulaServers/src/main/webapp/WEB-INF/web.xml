@@ -49,4 +49,44 @@
     <servlet-name>CadastroServlet</servlet-name>
     <url-pattern>/CadastroServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CadastroUsuarioServlet</display-name>
+    <servlet-name>CadastroUsuarioServlet</servlet-name>
+    <servlet-class>controller.CadastroUsuarioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastroUsuarioServlet</servlet-name>
+    <url-pattern>/CadastroUsuarioServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RealParaDolar</display-name>
+    <servlet-name>RealParaDolar</servlet-name>
+    <servlet-class>controller.RealParaDolar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RealParaDolar</servlet-name>
+    <url-pattern>/RealParaDolar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListaServlet</display-name>
+    <servlet-name>ListaServlet</servlet-name>
+    <servlet-class>controller.ListaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListaServlet</servlet-name>
+    <url-pattern>/ListaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListaFuncionarios</display-name>
+    <servlet-name>ListaFuncionarios</servlet-name>
+    <servlet-class>controller.ListaFuncionarios</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListaFuncionarios</servlet-name>
+    <url-pattern>/ListaFuncionarios</url-pattern>
+  </servlet-mapping>
 </web-app>
