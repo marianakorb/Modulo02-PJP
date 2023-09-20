@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados - IBGE</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <form action="">
+        <div id="endereco">
+            <label for="estado">Selecione um estado: </label>
+            <select name="estado" id="estado" onchange="loadCidade(this.value)"></select>
+            <label for="cidade">Selecione a cidade:</label>
+            <select name="cidade" id="cidade"></select>
+
+        </div>
+    </form>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

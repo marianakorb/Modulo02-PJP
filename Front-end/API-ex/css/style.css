@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+form {
+    display: block;
+}
+
+select {
+    height: 25px;
+    display: inline-block;
+}
+
+div#endereco {
+    padding: 10px;
+    background-color: rgb(225, 255, 127);
+    width: fit-content;
+    margin: auto;
+    margin-top: 64px;
+}
