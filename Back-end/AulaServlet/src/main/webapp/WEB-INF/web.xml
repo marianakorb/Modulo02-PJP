@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
   <servlet>
     <description></description>
     <display-name>FuncionarioServlet</display-name>
@@ -28,5 +28,95 @@
   <servlet-mapping>
     <servlet-name>MapServlet</servlet-name>
     <url-pattern>/MapServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CalculadoraServlet</display-name>
+    <servlet-name>CalculadoraServlet</servlet-name>
+    <servlet-class>controller.CalculadoraServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculadoraServlet</servlet-name>
+    <url-pattern>/CalculadoraServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AluguelServlet</display-name>
+    <servlet-name>AluguelServlet</servlet-name>
+    <servlet-class>controller.AluguelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AluguelServlet</servlet-name>
+    <url-pattern>/AluguelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CalculaIMCServlet</display-name>
+    <servlet-name>CalculaIMCServlet</servlet-name>
+    <servlet-class>controller.CalculaIMCServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculaIMCServlet</servlet-name>
+    <url-pattern>/CalculaIMCServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PessoaServlet</display-name>
+    <servlet-name>PessoaServlet</servlet-name>
+    <servlet-class>controller.PessoaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PessoaServlet</servlet-name>
+    <url-pattern>/PessoaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServelet</display-name>
+    <servlet-name>LoginServelet</servlet-name>
+    <servlet-class>controller.LoginServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServelet</servlet-name>
+    <url-pattern>/LoginServelet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AlterarPessoaServlet</display-name>
+    <servlet-name>AlterarPessoaServlet</servlet-name>
+    <servlet-class>controller.AlterarPessoaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlterarPessoaServlet</servlet-name>
+    <url-pattern>/AlterarPessoaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EstoqueServlet</display-name>
+    <servlet-name>EstoqueServlet</servlet-name>
+    <servlet-class>controller.EstoqueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EstoqueServlet</servlet-name>
+    <url-pattern>/EstoqueServlet</url-pattern>
   </servlet-mapping>
 </web-app>
