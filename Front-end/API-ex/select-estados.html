@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados - IBGE</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
 
@@ -13,12 +14,26 @@
             <label for="estado">Selecione um estado: </label>
             <select name="estado" id="estado" onchange="loadCidade(this.value)"></select>
             <label for="cidade">Selecione a cidade:</label>
-            <select name="cidade" id="cidade"></select>
+            <select id="cidade" onchange="resultado('cidade')"></select>
+        </div>
 
+        <div id="resultado">
+            <div id="fechar"><span id="fechar-x">X</span></div>
+            <h3>Resultado</h3>
+            <div id="result">
+                <span class="item">Estado:<span id="item-estado"></span></span>
+                <span class="item">Cidade:<span id="item-cidade"></span></span>
+            </div>
         </div>
     </form>
 
 
-    <script src="./js/script.js"></script>
+    <script>  
+        aplicarDisplay('resultado','none');
+        
+        //eventos
+        document.getElementById('fechar-x').addEventListener("click", () =>{
+            aplicarDisplay('resultado','none');
+        });</script>
 </body>
 </html>
