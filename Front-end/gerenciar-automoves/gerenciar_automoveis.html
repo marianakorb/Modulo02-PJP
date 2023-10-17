@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gerenciar - Automoveis</title>
+    <link href="css/geral.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li class="title">Fabricante</li>
+                    <li class="link" onclick="getShowItemMenu('fabricante-cadastro')">Cadastrar</li>
+                    <li class="link" onclick="getShowItemMenu('fabricante-lista')">Listar</li>
+                    <li class="title">Modelo</li>
+                    <li class="link" onclick="getShowItemMenu('modelo-cadastro')">Cadastrar</li>
+                    <li class="link" onclick="getShowItemMenu('modelo-lista')">Listar</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <!--fabricante-->
+            <section id="fabricante-cadastro" class="hidden">
+                <h1>Cadastro de fabricante</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados do fabricante</legend>
+                        <label>Nome</label>
+                        <input type="text" id="fabricante-cadastro-input-nome" required />
+                        <label>Origem</label>
+                        <input type="text" id="fabricante-cadastro-input-origen" />
+                    </fieldset>
+                    <button>Cadastrar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="fabricante-editar" class="hidden">
+                <h1>Editar de fabricante</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados do fabricante</legend>
+                        <label>Nome</label>
+                        <input type="text" id="fabricante-cadastro-input-nome-edit" required />
+                        <label>Origem</label>
+                        <input type="text" id="fabricante-cadastro-input-origem-editar" />
+                    </fieldset>
+                    <button>Atualizar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="fabricante-lista" class="hidden">
+                <h1>Lista de fabricante</h1>
+                <ul>
+                    <li>
+                        <div class="bold">Nome</div>
+                        <div class="bold">Origem</div>
+                        <div class="bold title">Excluir</div>
+                        <div class="bold title">Alterar</div>
+                    </li>
+                    <li>
+                        <div>Citroen</div>
+                        <div>França</div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
+                        <div nome="Citroen" origem="França" class="title link" idEdit="fabricante-editar"
+                            onclick="getShowEdit(this)">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Volvo</div>
+                        <div>Suiça</div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--modelo-->
+            <section id="modelo-cadastro" class="hidden">
+                <h1>Cadastro de modelo</h1>
+                <form>
+                    <div id="containner-form-modelo-cadastro">
+                        <div>
+                            <label>Modelo</label>
+                            <input type="text" id="modelo-cadastro-input-modelo" required />
+                            <label>Fabricante</label>
+                            <select id="modelo-cadastro-select-fabricante">
+                                <option value="">Selecione um fabricante</option>
+                                <option value="ford">Ford</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="Cintroen">Citroen</option>
+                            </select>
+                            <label>Descrição</label>
+                            <input type="text" id="modelo-cadastro-input-descricao" required />
+                            <label>Tipo de cambio</label>
+                            <select id="modelo-cadastro-select-cambio">
+                                <option value="">Selecione um modelo</option>
+                                <option value="manual">Manual</option>
+                                <option value="automatico">Automatico</option>
+                            </select>
+
+                            <label>Valor</label>
+                            <input type="text" id="modelo-cadastro-input-valor" required />
+                        </div>
+                        <div>
+                            <label>KM</label>
+                            <input type="text" id="modelo-cadastro-input-km" required />
+                            <label>Ano fabricação</label>
+                            <input type="text" id="modelo-cadastro-input-ano-fabricacao" required />
+                            <label>Ano modelo</label>
+                            <input type="text" id="modelo-cadastro-input-ano-modelo" required />
+                            <label>Cor</label>
+                            <input type="text" id="modelo-cadastro-input-cor" required />
+                            <label>Combustível</label>
+                            <input type="text" id="modelo-cadastro-input-combustive" required />
+                        </div>
+                    </div>
+                    <button>Cadastrar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="modelo-editar" class="hidden">
+                <h1>Editar modelo</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados do fabricante</legend>
+                        <label>Nome</label>
+                        <input type="text" id="fabricante-cadastro-input-nome-edit" required />
+                        <label>Origem</label>
+                        <input type="text" id="fabricante-cadastro-input-origem-editar" />
+                    </fieldset>
+                    <button>Atualizar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="modelo-lista" class="hidden">
+                <h1>Lista de modelos</h1>
+                <ul>
+                    <li>
+                        <div class="bold">Modelo</div>
+                        <div class="bold">Fabricante</div>
+                        <div class="bold">Descrição</div>
+                        <div class="bold">Valor</div>
+                        <div class="bold">KM</div>
+                        <div class="bold">Ano fabricação</div>
+                        <div class="bold">Ano modelo</div>
+                        <div class="bold">Cor</div>
+                        <div class="bold">Combustível</div>
+                        <div class="bold title">Excluir</div>
+                        <div class="bold title">Alterar</div>
+                    </li>
+                    <li>
+                        <div>Combustível</div>
+                        <div>FORD </div>
+                        <div>3.2 FX4 4X4 CD 20V DIESEL 4P</div>
+                        <div>R$ 226.900</div>
+                        <div>7.440</div>
+                        <div>2022</div>
+                        <div>2023</div>
+                        <div>Branca</div>
+                        <div>Diesel</div>
+
+                        <div class="title link">
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
+                        <div nome="Citroen" origem="França" class="title link" idEdit="modelo-editar"
+                            onclick="getShowEdit(this)">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="js/geral.js"></script>
+
+</html>
