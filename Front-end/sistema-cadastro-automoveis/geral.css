@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #CCC;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 160px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    border: 1px solid #888;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#menu {
+    width: 150px;
+    display: flex;
+    box-shadow: 0px 0px 10px #888;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+nav li.link {
+    font-weight: bold;
+    color: #888;
+}
+
+nav li.link:hover {
+    text-decoration: underline;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+
+section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fabricante-lista ul li{
+    display: grid;
+    grid-template-columns: 200px 100px 100px 100px;
+}
+
+/*formatacao de formulario*/
+button {
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #5f70cc;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    margin: 10px 0px 10px 0px;
+}
+
+button:hover {
+    background-color: #4d5eb9;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    background-color: #d3d3d3;
+}

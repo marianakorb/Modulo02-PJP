@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar - Automoveis</title>
+    <link href="geral.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li class="title">Fabricante</li>
+                    <li class="link" onclick="getShowItemMenu('fabricante-cadastro')">Cadastrar</li>
+                    <li class="link" onclick="getShowItemMenu('fabricante-lista')">Listar</li>
+                    <li class="title">Modelo</li>
+                    <li class="link">Cadastrar</li>
+                    <li class="link">Listar</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section id="fabricante-cadastro" class="hidden">
+                <h1>Cadastro de fabricante</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados do fabricante</legend>
+                        <label>Nome</label>
+                        <input type="text" id="fabricante-cadastro-input-nome" required />
+                        <label>Origem</label>
+                        <input type="text" id="fabricante-cadastro-input-origen" />
+                    </fieldset>
+                    <button>Cadastrar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="fabricante-editar" class="hidden">
+                <h1>Editar de fabricante</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados do fabricante</legend>
+                        <label>Nome</label>
+                        <input type="text" id="fabricante-cadastro-input-nome-edit" required />
+                        <label>Origem</label>
+                        <input type="text" id="fabricante-cadastro-input-origem-editar" />
+                    </fieldset>
+                    <button>Atualizar</button>
+                    <button>Limpar</button>
+                </form>
+            </section>
+            <section id="fabricante-lista" class="hidden">
+                <h1>Lista de fabricante</h1>
+                <ul>
+                    <li>
+                        <div class="bold">Nome</div>
+                        <div class="bold">Origem</div>
+                        <div class="bold title">Excluir</div>
+                        <div class="bold title">Alterar</div>
+                    </li>
+                    <li>
+                        <div>Citroen</div>
+                        <div>Fran�a</div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
+                        <div nome="Citroen" origem="Fran�a" class="title link" idEdit="fabricante-editar" onclick="getShowEdit(this)">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Volvo</div>
+                        <div>Sui�a</div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
+                        <div class="title link">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="geral.js"></script>
+</html>
